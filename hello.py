@@ -3,4 +3,7 @@ def greet(name):
 
 if __name__ == "__main__":
     name = input("Enter your name: ")
-    print(greet(name))
+    if not name.strip():
+        print("Name cannot be empty!")
+    else:
+        print(greet(name))
